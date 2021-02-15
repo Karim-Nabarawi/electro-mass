@@ -36,13 +36,15 @@ const Navbar = () => {
 };
 
 const StyledNav = styled(motion.nav)`
+  position: sticky;
+  top: 0;
   display: flex;
   margin: auto;
   margin-bottom: 3rem;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  padding: 0rem 5vw;
+  padding: 0rem 5rem;
   background: rgba(25, 25, 25, 0.5);
   z-index: 10;
   a {

@@ -25,9 +25,9 @@ const WelcomeSection = () => {
 
 const StyledWelcomeSection = styled(motion.div)`
   background: #212322;
-  min-height: 70vh;
+  min-height: 50vh;
   position: relative;
-  padding: 0rem 5vw;
+  padding: 0rem 5rem;
   .description {
     z-index: 2;
   }

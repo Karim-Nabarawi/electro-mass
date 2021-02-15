@@ -10,6 +10,8 @@ import Logo from "../images/Logo-text-only.svg";
 //Components
 import WelcomeSection from "../components/WelcomeSection";
 import Navbar from "../components/Navbar";
+import About from "../components/About";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       </div>
       <Navbar />
       <WelcomeSection />
+      <About />
+      <Services />
     </StyledHome>
   );
 };
