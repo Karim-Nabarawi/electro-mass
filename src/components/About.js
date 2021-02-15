@@ -9,53 +9,56 @@ import { GiBinoculars } from "react-icons/gi";
 import { FaLightbulb } from "react-icons/fa";
 import { ImTarget } from "react-icons/im";
 import { TileWithLine } from "./Ulti";
+import FrameContainer from "./FrameContainer";
 
 const About = () => {
   return (
     <StyledAbout>
       <TileWithLine Text="ABOUT" />
-      <StyledContent>
-        <StyledHeader color="#FCB40D">
-          <div className="imgContainer">
-            <div className="outerConatiner">
-              <div className="innerConatiner">
-                <GiBinoculars className="icon" />
+      <FrameContainer>
+        <StyledContent>
+          <StyledHeader color="#FCB40D">
+            <div className="imgContainer">
+              <div className="outerConatiner">
+                <div className="innerConatiner">
+                  <GiBinoculars className="icon" />
+                </div>
               </div>
             </div>
-          </div>
-          <h1>MISSION</h1>
-          <p>To provide suiable desing for all needs</p>
-        </StyledHeader>
-        <StyledHeader color="#A8FC0D">
-          <div className="imgContainer">
-            <div className="outerConatiner">
-              <div className="innerConatiner">
-                <FaLightbulb className="icon" />
+            <h1>MISSION</h1>
+            <p>To provide suiable desing for all needs</p>
+          </StyledHeader>
+          <StyledHeader color="#A8FC0D">
+            <div className="imgContainer">
+              <div className="outerConatiner">
+                <div className="innerConatiner">
+                  <FaLightbulb className="icon" />
+                </div>
               </div>
             </div>
-          </div>
-          <h1>VISION</h1>
-          <p>To improve productivity in the least time</p>
-        </StyledHeader>
-        <StyledHeader color="#1961fc">
-          <div className="imgContainer">
-            <div className="outerConatiner">
-              <div className="innerConatiner">
-                <ImTarget className="icon" />
+            <h1>VISION</h1>
+            <p>To improve productivity in the least time</p>
+          </StyledHeader>
+          <StyledHeader color="#1961fc">
+            <div className="imgContainer">
+              <div className="outerConatiner">
+                <div className="innerConatiner">
+                  <ImTarget className="icon" />
+                </div>
               </div>
             </div>
-          </div>
-          <h1>Values</h1>
-          <p>Trustworthiness, Innovation & Quality</p>
-        </StyledHeader>
-      </StyledContent>
+            <h1>Values</h1>
+            <p>Trustworthiness, Innovation & Quality</p>
+          </StyledHeader>
+        </StyledContent>
+      </FrameContainer>
     </StyledAbout>
   );
 };
 
 const StyledAbout = styled(motion.div)`
   margin-top: 5rem;
-  padding: 5rem 0rem;
+  padding: 5rem 5rem;
   text-align: center;
   h1 {
     font-size: 64px;
@@ -113,6 +116,7 @@ const StyledHeader = styled(motion.div)`
     color: #fce300;
     font-size: 28px;
     min-height: 8rem;
+    text-align: left;
   }
 `;
 

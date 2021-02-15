@@ -10,13 +10,14 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
 //#region  title With line animation
-export const TileWithLine = ({ Text }) => {
+export const TileWithLine = ({ Text, sideText }) => {
   const [element, controls] = useScroll();
 
   return (
     <StyledTitleContainer>
       <div className="title">
         <motion.h1 variants={fade} initial="hidden" animate={controls} ref={element}>
+          <span>{sideText}</span>
           {Text}
         </motion.h1>
         <StyledLine variants={lineAnim} initial="hidden" animate={controls} ref={element}></StyledLine>
@@ -27,9 +28,13 @@ export const TileWithLine = ({ Text }) => {
 
 const StyledTitleContainer = styled(motion.div)`
   color: #fce300;
+  margin-bottom: 4rem;
   .title {
     position: relative;
     display: inline-block;
+  }
+  span {
+    margin-right: 1rem;
   }
 `;
 

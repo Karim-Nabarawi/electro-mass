@@ -45,7 +45,7 @@ const StyledNav = styled(motion.nav)`
   justify-content: flex-start;
   align-items: center;
   padding: 0rem 5rem;
-  background: rgba(25, 25, 25, 0.5);
+  background: rgba(25, 25, 25, 1);
   z-index: 10;
   a {
     color: #c8b930;
