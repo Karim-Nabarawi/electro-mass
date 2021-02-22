@@ -55,12 +55,26 @@ const StyledSerives = styled(motion.div)`
   min-height: 80vh;
   margin-top: 5rem;
   padding: 0rem 5rem;
+  text-align: center;
   .header {
     h1 {
       padding: 2rem;
-      font-size: 32px;
-      color: #fce300;
+      font-size: 64px;
+      color: white;
     }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .header {
+      h1 {
+        padding: 1rem;
+        font-size: 32px;
+      }
+    }
+    min-height: 0;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 0rem 1.5rem;
   }
 `;
 const StyledContainer = styled(motion.div)`
@@ -94,13 +108,13 @@ const StyledContainer = styled(motion.div)`
   .description {
     padding: 10% 0;
     margin: auto;
-    .details {
-      width: 100%;
-      margin-top: 3rem;
-      padding-left: 2rem;
-      font-size: 32px;
-      color: white;
-    }
+  }
+  .details {
+    width: 100%;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    font-size: 32px;
+    color: white;
   }
 
   @media only screen and (max-width: 1180px) {
@@ -113,6 +127,7 @@ const StyledContainer = styled(motion.div)`
     }
     .heightControl {
       width: auto;
+      min-height: 5rem;
     }
   }
 
@@ -133,6 +148,16 @@ const StyledContainer = styled(motion.div)`
     }
     .order:nth-of-type(4) {
       order: 4;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    padding: 2rem 1rem;
+    h1 {
+      font-size: 24px;
+    }
+    .details {
+      font-size: 18px;
     }
   }
 `;

@@ -40,12 +40,11 @@ const StyledNav = styled(motion.nav)`
   top: 0;
   display: flex;
   margin: auto;
-  margin-bottom: 3rem;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
   padding: 0rem 5rem;
-  background: rgba(25, 25, 25, 1);
+  background: rgba(25, 25, 25, 0.5);
   z-index: 10;
   a {
     color: #c8b930;
@@ -56,11 +55,21 @@ const StyledNav = styled(motion.nav)`
     list-style: none;
   }
   li {
-    font-size: 2vw;
-    padding: 1.7rem;
+    font-size: 24px;
+    padding: 1.5rem;
   }
   .active {
     background: rgb(45, 43, 22);
+  }
+  &:hover {
+    background: rgba(25, 25, 25, 1);
+  }
+  @media only screen and (max-width: 700px) {
+    padding: 0rem 1rem;
+    li {
+      font-size: 16px;
+      padding: 0.5rem;
+    }
   }
 `;
 

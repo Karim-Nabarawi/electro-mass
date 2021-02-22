@@ -12,6 +12,7 @@ import WelcomeSection from "../components/WelcomeSection";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Services from "../components/Services";
+import Partners from "../components/Partners";
 
 const Home = () => {
   return (
@@ -21,8 +22,9 @@ const Home = () => {
       </div>
       <Navbar />
       <WelcomeSection />
-      <About />
+      {/* <About /> */}
       <Services />
+      <Partners />
     </StyledHome>
   );
 };

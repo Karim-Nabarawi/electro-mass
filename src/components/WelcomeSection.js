@@ -25,24 +25,37 @@ const WelcomeSection = () => {
 
 const StyledWelcomeSection = styled(motion.div)`
   background: #212322;
-  min-height: 50vh;
+  min-height: 20vh;
   position: relative;
   padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .description {
     z-index: 2;
   }
   .image {
+    text-align: center;
     img {
-      width: 30%;
-      position: absolute;
-      top: -30vh;
-      right: 5vw;
+      width: 80%;
+      padding: 1rem;
     }
   }
   .smallText {
     color: white;
     font-weight: lighter;
     font-size: 4vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0rem 1rem;
+    .image {
+      display: none;
+    }
+    .description {
+      width: 100%;
+      text-align: center;
+    }
   }
 `;
 

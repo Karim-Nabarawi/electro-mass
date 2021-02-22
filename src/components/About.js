@@ -113,7 +113,7 @@ const StyledHeader = styled(motion.div)`
   }
   p {
     margin: 4rem 0px;
-    color: #fce300;
+    color: white;
     font-size: 28px;
     min-height: 8rem;
     text-align: left;
